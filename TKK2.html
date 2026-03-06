@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bhairavnath Enterprises</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f6f9;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00c6ff;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')
+center/cover no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:14px 35px;
+border:none;
+background:#0072ff;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#0047b3;
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+text-align:center;
+font-size:34px;
+margin-bottom:40px;
+color:#0f2027;
+}
+
+/* ABOUT */
+
+.about{
+text-align:center;
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.4s;
+}
+
+.card i{
+font-size:40px;
+color:#0072ff;
+margin-bottom:15px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+th,td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+th{
+background:#0072ff;
+color:white;
+}
+
+/* REVIEWS */
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.review{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+
+.contact{
+background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
+color:white;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+form input,form textarea{
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:6px;
+}
+
+form button{
+padding:14px;
+background:#0072ff;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* SOCIAL */
+
+.social{
+margin-top:20px;
+}
+
+.social i{
+font-size:24px;
+margin:10px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:28px;
+text-decoration:none;
+
+/* instagram*/
+
+.instagram{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:28px;
+text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Bhairavnath Enterprises</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div>
+
+<h1>Trusted Building Material Supplier in Pune</h1>
+
+<p>Cement • Bricks • Sand • Dumper • JCB • Land Development</p>
+
+
+<button onclick="document.getElementById('contact').scrollIntoView()">
+Contact Us
+</button>
+
+</div>
+
+</section>
+
+
+<section class="section" id="about">
+
+<h2>About Company</h2>
+
+<p class="about">
+Bhairavnath Enterprises is a trusted building material supplier in Pune.
+We provide cement, bricks, sand, metal and dumper services with fast
+delivery and reliable prices. Our mission is to provide high quality
+construction materials for builders and contractors.
+</p>
+
+</section>
+
+
+<section class="section" id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<i class="fa-solid fa-industry"></i>
+<h3>Cement Supply</h3>
+<p>All major cement brands available.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building"></i>
+<h3>Construction Materials</h3>
+<p>Bricks, sand and all building materials.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-truck"></i>
+<h3>Dumper Services</h3>
+<p>Fast and reliable dumper delivery.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-mountain-city"></i>
+<h3>Land Development</h3>
+<p>Professional land development services.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building"></i>
+<h3>JCB </h3>
+<p>Fast and reliable Work.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="projects">
+
+<h2>Our Projects</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5">
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Material Price List</h2>
+
+<table>
+
+<tr>
+<th>Material</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Cement Bag</td>
+<td>₹380</td>
+</tr>
+
+<tr>
+<td>Sand(Murum)</td>
+<td>₹1000 Brass</td>
+</tr>
+
+<tr>
+<td>Cement Bricks (1000)</td>
+<td>₹8000</td>
+</tr>
+
+<tr>
+<td>crush Sand </td>
+<td>₹3100 Brass</td>
+</tr>
+
+<tr>
+<td>JCB</td>
+<td>₹1000 hr</td>
+</tr>
+
+<tr>
+<td>20.mm Stone</td>
+<td>₹3000 Brass</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="section">
+
+<h2>Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>Best construction supplier in Wagholi.</p>
+<h4>- Nandu Dhavale</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>Fast dumper service and great pricing.</p>
+<h4>- Sagar Jadhav</h4>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="4" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+<p>📍 Wagholi, Pune - 412207</p>
+<p>📞 9604800890 / 9823853939</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram "></i>
+<i class="fab fa-whatsapp"></i>
+
+</div>
+
+<iframe
+src="https://maps.google.com/maps?q=wagholi%20pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300">
+</iframe>
+
+</section>
+
+
+<footer>
+
+© 2026 H&N WEB DEVELOPER
+
+</footer>
+
+
+<a href="https://wa.me/919604800890" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="https://www.instagram.com/tushar_katke_8274?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="instagram">
+<i class="fab fa-instagram"></i>
+</a>
+
+</body>
+</html>
